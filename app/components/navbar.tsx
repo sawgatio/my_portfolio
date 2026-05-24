@@ -2,15 +2,17 @@ import React from "react";
 import Link from "next/link";
 
 export const Navbar = () => {
-    return <div>
-        <div className="flex justify-between  items-center gap-6 text-sm font-medium bg-neutral-300 inset-ring-1  inset-ring-neutral-400 p-2 mt-3 max-auto-width rounded-2xl">          
-           <Link className="text-secondary p-1  transition-colors hover:text-neutral-500" href="/About">About</Link> |
-           <Link className="text-primary transition-colors hover:text-neutral-500" href="/skills" >Skills</Link> | 
-           <Link className="text-secondary transition-colors hover:text-neutral-500" href="/projects">Projects</Link> | 
-           <Link className="text-secondary transition-colors hover:text-neutral-500" href="/resume">Resume</Link>
+    return(
+        <div className="flex justify-center mt-4">
+        <div className="flex  items-center gap-4 text-sm font-medium  inset-ring-1  inset-ring-neutral-400 p-2 mt-3 rounded-2xl">          
+           <Link className="text-secondary p-1 text-neutral-500  transition-colors hover:text-neutral-800" href="/About">About</Link>|
+           <Link className="text-primary text-neutral-500 transition-colors hover:text-neutral-800" href="/skills" >Skills</Link>|  
+           <Link className="text-secondary text-neutral-500 transition-colors hover:text-neutral-800" href="/projects">Projects</Link>| 
+           <Link className="text-secondary text-neutral-500 transition-colors hover:text-neutral-800" href="/resume">Resume</Link>
 
         </div>
-    </div>  
+    </div>
+)  
 }
 
 

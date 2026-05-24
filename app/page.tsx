@@ -10,15 +10,12 @@ import { MoonIcon,SunIcon } from "./icons/moonIcon";
 export default function Home() {
 
   return (
-    <div className=" p-3 rounded-xl w-full ">
+    <div className="p-3 rounded-xl w-full ">
       <Container>
         <Navbar/>
-        
+        <Hero/>
       </Container>
-      <div className="m-20">
-          <Hero/>
-      </div>
-      
+            
     </div>
   );
 }
