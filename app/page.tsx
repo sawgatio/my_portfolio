@@ -1,19 +1,20 @@
-
-import Image from "next/image";
-import Link from "next/link";
 import { Navbar } from "./components/navbar";
 import { Container } from "./components/container";
 import { Hero } from "./components/hero";
-import { HamIcon } from "./icons/icon";
-import { MoonIcon,SunIcon } from "./icons/moonIcon";
+import { About } from "./components/about";
+import { Projects } from "./components/project";
+import { Skill } from "./components/skills";
 
 export default function Home() {
 
   return (
-    <div className="p-3 rounded-xl w-full ">
+    <div className="p-3 w-full ">
       <Container>
         <Navbar/>
         <Hero/>
+        <About/>
+        <Skill/>
+        <Projects/>
       </Container>
             
     </div>
